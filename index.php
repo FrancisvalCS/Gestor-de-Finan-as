@@ -1,3 +1,17 @@
+<?php 
+    ob_start();
+    session_start();
+    require_once('/dts/configs.php');
+
+    /*if(){
+
+    }*/
+
+    print_r($_POST);
+    print_r($_SESSION);
+
+
+?>
 <!DOCTYPE html>
 <html  lang="pt-br">
 <head>
@@ -22,7 +36,7 @@
     <div class="limiter">
         <div class="container-login100 bgimage">
             <div class="wrap-login100">
-                <form class="login100-form validate-form">
+                <form class="login100-form validate-form" method="post">
                     <span class="login100-form-title p-b-34 p-t-27">
                         GPFIN
                     </span>
@@ -35,9 +49,7 @@
                         <span class="focus-input100" data-placeholder="&#xf191;"></span>
                     </div>
                     <div class="container-login100-form-btn">
-                        <button class="login100-form-btn">
-                            Login
-                        </button>
+                        <button class="login100-form-btn">Login</button>
                     </div>
                     <div class="text-center p-t-90">
                         <a class="txt1" href="#">
